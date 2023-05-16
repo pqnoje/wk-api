@@ -72,7 +72,7 @@ public class ClienteController {
 			if(clienteEntity.getSaldo().floatValue() >= saque.getQuantidade().floatValue()) {
 				if(clienteEntity.getPlanoExclusive() || saque.getQuantidade().floatValue() <= 100) {
 					clienteEntity.setSaldo(clienteEntity.getSaldo().subtract(saque.getQuantidade()));
-					this.salvarHistorico(clienteEntity, "saque", saque.getQuantidade());
+					this.salvarHistorico(clienteEntity, "saque", saque.getQuantidade()); 
 				} else if (saque.getQuantidade().floatValue() > 100 && saque.getQuantidade().floatValue() < 300){
 					BigDecimal quantidade = BigDecimal.valueOf(saque.getQuantidade().doubleValue() * 1.004);
 					if(clienteEntity.getSaldo().floatValue() >= quantidade.floatValue()) {
