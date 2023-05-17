@@ -1,8 +1,0 @@
-com\example\restservice\RestServiceApplication.class
-com\example\restservice\DepositoDTO.class
-com\example\restservice\SaqueDTO.class
-com\example\restservice\ClienteController.class
-com\example\restservice\Historico.class
-com\example\restservice\HistoricoRepository.class
-com\example\restservice\Cliente.class
-com\example\restservice\ClienteRepository.class
